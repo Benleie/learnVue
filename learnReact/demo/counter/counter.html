@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>a counter</title>
+	<style>
+		.app {
+			width: 500px;
+			height: 100px;
+			margin: 20px auto 0;
+			border: 1px solid blue;
+			/*text-align: center;*/
+			/* 垂直居中 */
+			display: flex;
+    		justify-content:center;
+    		align-items: center;
+		}
+	</style>
+	<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+	<div id="vanillaApp" class="app">
+		<div>
+			<div>
+				VanillaApp Current Count: <span>0</span> apples
+			</div>
+			<div>
+				<button class='inc' onclick=''>Increment!</button>
+		        <button class='dec' onclick=''>Decrement!</button>
+		        <button class='incIfOdd' onclick=''>increment if odd</button>
+		        <button class='incAsync' onclick=''>increment async</button>
+		        <button class='reset' onclick=''>Reset</button>
+			</div>
+		</div>
+	</div>
+	<div id="reactApp" class="app"></div>
+	<div id="vueApp" class="app"></div>
+	
+	<script type="text/babel" src="index.js"></script>
+</body>
+</html>
