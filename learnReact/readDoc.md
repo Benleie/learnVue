@@ -5,8 +5,10 @@
 Other than the length values that default to px, all other property values should be wrapped in quotes.
 
 ## 使用React
-页面引入的文件 react,react-dom,babel.js("text/babel")
+页面引入的文件 react,react-dom,babel.js
 + react.js文件是创建React元素和组件的核心文件，react-dom.js文件用来把React组件渲染为DOM，此文件依赖于react.js文件，需在其后被引入。
++ JSX("text/babel")最终被Babel生成为React元素
++ babel.min.js:24 You are using the inbrowser-Babel transformer. Be sure to precompile your scripts for production 
 
 `ReactDOM.render(componentToRender, targetNode)`, where the first argument is the React element or component that you want to render.
 
