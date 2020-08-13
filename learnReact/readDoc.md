@@ -15,11 +15,13 @@ Other than the length values that default to px, all other property values shoul
 
 ## React基础
 ### JSX
-Babel转译器会把JSX转换成一个名为React.createElement()的方法调用，生成React元素。
-JSX中的代码需要用' '括起来。
-Nested JSX must return a single element.  可以用一个括号parentheses括起来，不做严格要求
-注释 `{/**/}`
-使用关键词className
++ Babel转译器会把JSX转换成一个名为React.createElement()的方法调用，生成React元素。
++ JSX中的代码需要用' '括起来。
++ Nested JSX must return a single element.  可以用一个括号parentheses括起来，不做严格要求
++ 注释 `{/**/}`
++ 使用关键词className
++  Any JSX element can be written with a self-closing tag, and every element must be closed. The line-break tag, for example, must always be written as `<br />` in order to be valid JSX that can be transpiled. 
+
 
 ### Component
 stateless functional component   class component
