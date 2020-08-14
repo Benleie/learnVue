@@ -38,7 +38,9 @@ Other than the length values that default to px, all other property values shoul
 + class component自带props，所以需要this.props加以区分
 
 #### state
-encapsulated state
-`this.handleClick = this.handleClick.bind(this);`
-componentDidMount  在此声明函数中请求api;attach any  synthetic event listeners 
++ encapsulated state
++ this.setState()
++ this should not be used inside setState  使用匿名函数解决异步问题
++ `this.handleClick = this.handleClick.bind(this);`
++ componentDidMount  在此声明函数中请求api;attach any  synthetic event listeners 
 

@@ -628,7 +628,36 @@ class MyComponent extends React.Component {
 
 
 /*25 bind-this-to-a-class-method*/
+
 class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: "Hello"
+    };
+    // change code below this line
+    this.handleClick = this.handleClick.bind(this);
+    // change code above this line
+  }
+  handleClick() {
+    this.setState({
+      text: "You clicked!"
+    });
+  }
+  render() {
+    return (
+      <div>
+        { /* change code below this line */ }
+        <button onClick={this.handleClick}>Click Me</button>
+        { /* change code above this line */ }
+        <h1>{this.state.text}</h1>
+      </div>
+    );
+  }
+};
+
+
+/* class MyComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -646,17 +675,16 @@ class MyComponent extends React.Component {
   render() {
     return (
       <div>
-        { /* change code below this line */ }
         <button onClick={this.addItem}>Click Me</button>
-        { /* change code above this line */ }
         <h1>Current Item Count: {this.state.itemCount}</h1>
       </div>
     );
   }
-};
+}; */
 
 
 /*26 use-state-to-toggle-an-element*/
+// 
 class MyComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -668,11 +696,19 @@ class MyComponent extends React.Component {
     // change code above this line
   }
   // change code below this line
-  toggleVisibility(){
+
+  /* toggleVisibility(){
     this.setState({
       visibility: !this.state.visibility
     });
+  } */
+  //updated at 2020-08-14
+  toggleVisibility(){
+    this.setState(pState => ({
+      visibility: !pState.visibility
+    }));
   }
+
   // change code above this line
   render() {
     if (this.state.visibility) {
@@ -694,23 +730,20 @@ class MyComponent extends React.Component {
 
 
 /*27 write-a-simple-counter*/
+// this should not be used inside setState?
 class Counter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       count: 0
     };
-    // change code below this line
     this.increment = this.increment.bind(this);
     this.decrement = this.decrement.bind(this);
     this.reset = this.reset.bind(this);
-    // change code above this line
   }
-  // change code below this line
   increment() {this.setState({count:this.state.count + 1})}
   decrement() {this.setState({count:this.state.count - 1})}
   reset() {this.setState({count:0})}
-  // change code above this line
   render() {
     return (
       <div>
@@ -731,23 +764,19 @@ class ControlledInput extends React.Component {
     this.state = {
       input: ''
     };
-    // change code below this line
     this.handleChange = this.handleChange.bind(this);
-    // change code above this line
   }
-  // change code below this line
+
   handleChange(event) {
   	this.setState({
   		input: event.target.value
   	})
   }
-  // change code above this line
+  
   render() {
     return (
       <div>
-        { /* change code below this line */}
         <input type="text" value={this.state.input} onChange={this.handleChange} />
-        { /* change code above this line */}
         <h4>Controlled Input:</h4>
         <p>{this.state.input}</p>
       </div>
