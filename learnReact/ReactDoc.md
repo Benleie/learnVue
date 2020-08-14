@@ -26,15 +26,19 @@ Other than the length values that default to px, all other property values shoul
 ### Component
    class component
 + stateless functional component：can receive data and render it, but does not manage or track changes to that data
++ A stateless functional component is any function you write which accepts props and returns JSX.
 + 大写字母开头capital;  
 + 返回JSX或者null
 + A common pattern is to try to minimize statefulness and to create stateless functional components wherever possible.
 
-MyComponent.defaultProps
+
 + 所有的React组件必须像纯函数那样使用它们的props。  props只读,state可写
++ .defaultProps 
++ .propTypes
 + class component自带props，所以需要this.props加以区分
 
-### state
+#### state
 encapsulated state
 `this.handleClick = this.handleClick.bind(this);`
 componentDidMount  在此声明函数中请求api;attach any  synthetic event listeners 
+
