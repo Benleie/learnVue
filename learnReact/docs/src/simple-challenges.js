@@ -626,7 +626,7 @@ class MyComponent extends React.Component {
   }
 };
 
-/
+
 /*25 bind-this-to-a-class-method*/
 class MyComponent extends React.Component {
   constructor(props) {

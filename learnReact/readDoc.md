@@ -24,15 +24,15 @@ Other than the length values that default to px, all other property values shoul
 
 
 ### Component
-stateless functional component   class component
-+ can receive data and render it, but does not manage or track changes to that data
+   class component
++ stateless functional component：can receive data and render it, but does not manage or track changes to that data
 + 大写字母开头capital;  
 + 返回JSX或者null
 + A common pattern is to try to minimize statefulness and to create stateless functional components wherever possible.
 
 MyComponent.defaultProps
-所有的React组件必须像纯函数那样使用它们的props。  只读
-class component自带props，所以需要this.props加以区分
++ 所有的React组件必须像纯函数那样使用它们的props。  props只读,state可写
++ class component自带props，所以需要this.props加以区分
 
 ### state
 encapsulated state
