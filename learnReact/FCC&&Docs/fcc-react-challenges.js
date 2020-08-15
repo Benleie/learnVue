@@ -669,25 +669,20 @@ class MyForm extends React.Component {
         });
     }
     handleSubmit(event) {
-        // change code below this line
         this.setState({
             submit:this.state.input
         });
+        // ?
         event.preventDefault();
-        // change code above this line
     }
     render() {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    { /* change code below this line */}
                     <input value={this.state.input} onChange={this.handleChange}/>
-                    { /* change code above this line */}
                     <button type='submit'>Submit!</button>
                 </form>
-                { /* change code below this line */}
                 <h1>{this.state.submit}</h1>
-                { /* change code above this line */}
             </div>
         );
     }
@@ -705,7 +700,7 @@ class MyApp extends React.Component {
   render() {
     return (
        <div>
-         <Navbar name={this.state.name}/* your code here */ />
+         <Navbar name={this.state.name} />
        </div>
     );
   }
@@ -718,11 +713,13 @@ class Navbar extends React.Component {
   render() {
     return (
     <div>
-      <h1>Hello, my name is: {this.props.name} /* your code here */ </h1>
+      <h1>Hello, my name is: {this.props.name}  </h1>
     </div>
     );
   }
 };
+
+
 
 /*31. pass-a-callback-as-props*/
 class MyApp extends React.Component {
@@ -741,10 +738,8 @@ class MyApp extends React.Component {
   render() {
     return (
        <div>
-        { /* change code below this line */ }
         <GetInput input={this.state.inputValue} handleChange={this.handleChange} />
         <RenderInput input={this.state.inputValue}/>
-        { /* change code above this line */ }
        </div>
     );
   }

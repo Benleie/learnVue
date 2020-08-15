@@ -37,9 +37,11 @@ Other than the length values that default to px, all other property values shoul
 + .propTypes
 + class component自带props，所以需要this.props加以区分
 
++ 通过时钟的例子引入了组件的生命周期
+
 #### state
 + encapsulated state
-+ this.setState()
++ this.setState()而不是直接修改state
 + this should not be used inside setState  使用匿名函数解决异步问题
 + `this.handleClick = this.handleClick.bind(this);`
 + componentDidMount  在此声明函数中请求api;attach any  synthetic event listeners 
