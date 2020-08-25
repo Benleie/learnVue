@@ -1,5 +1,4 @@
 # learnVue
 
-
-## v2ex 
-安装chromeDriver需要科学上网..
++ /vue-router-demo 下载了vue-router官方库，用来演示example
++ /vuex-demo 下载了vuex官方库，用来演示example

@@ -1,4 +1,4 @@
-Vue教程
+# Vue教程
 
 + 想实现一个窗口可以自由拖动的简单编辑器;不断变化的时间；走钟；
 
@@ -17,7 +17,8 @@ data properties：实例接受参数，当参数指向的数据发生变化时�
 
 声明周期图
 
-
+## Vuex
++ 改变store中的state的唯一途径就是显式地提交 (commit) mutation。
 
 
 ## 计算属性和观察者
@@ -62,5 +63,29 @@ v-bind对应:    v-on对应@
 
 #### 定义组件模板的方法： 
 字符串，ES6模板字面量，script/x-template,JavaScript内联模板,render函数，JSX,.vue组件
+
+
+## Vue Router
++ router-view 负责渲染对应路由中的组件，包括路由中的children也有其component有对应的router-view
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

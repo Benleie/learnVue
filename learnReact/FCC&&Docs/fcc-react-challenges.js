@@ -782,9 +782,7 @@ class MyComponent extends React.Component {
     super(props);
   }
   componentWillMount() {
-    // change code below this line
     console.log("Anything is ok")
-    // change code above this line
   }
   render() {
     return <div />
@@ -799,6 +797,7 @@ class MyComponent extends React.Component {
       activeUsers: null
     };
   }
+  // setTimeout 匿名函数
   componentDidMount() {
     setTimeout( () => {
       this.setState({
@@ -809,7 +808,7 @@ class MyComponent extends React.Component {
   render() {
     return (
       <div>
-        <h1>Active Users: { this.state.activeUsers /* change code here */ }</h1>
+        <h1>Active Users: { this.state.activeUsers }</h1>
       </div>
     );
   }
@@ -825,14 +824,14 @@ class MyComponent extends React.Component {
     this.handleEnter = this.handleEnter.bind(this);
     this.handleKeyPress = this.handleKeyPress.bind(this);
   }
-  // change code below this line
+
   componentDidMount() {
     document.addEventListener("keydown", this.handleKeyPress)
   }
   componentWillUnmount() {
     document.removeEventListener("keydown", this.handleKeyPress)
   }
-  // change code above this line
+
   handleEnter() {
     this.setState({
       message: this.state.message + 'You pressed the enter key! '
@@ -854,7 +853,7 @@ class MyComponent extends React.Component {
 
 
 /*35 manage-updates-with-lifecycle-methods*/
-
+// can not find??
 class Dialog extends React.Component {
   constructor(props) {
     super(props);
@@ -967,14 +966,12 @@ const styles = {
   fontSize: 40,
   border: "2px solid purple"
 }
-// change code above this line
+
 class Colorful extends React.Component {
   render() {
-    // change code below this line
     return (
       <div style={styles}>Style Me!</div>
     );
-    // change code above this line
   }
 };
 
