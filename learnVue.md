@@ -11,7 +11,7 @@ toggle是怎样切换的？每次通过this直接更改一次loginType的值？
 
 声明式渲染：message为什么被console可以随时更新？(updated)
 
-指令：v-bild,v-if,v-for,v-on
+指令：v-bind,v-if,v-for,v-on
 v-model实现表单输入和应用状态之间的双向绑定(updated)
 
 data properties：实例接受参数，当参数指向的数据发生变化时，view将重新渲染。
