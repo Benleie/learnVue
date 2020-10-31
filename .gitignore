@@ -1,3 +1,4 @@
 **/node_modules/
-vueBlog
 nuxt
+vue-router-demo
+vuex-demo
