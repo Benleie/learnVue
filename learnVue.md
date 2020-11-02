@@ -64,8 +64,13 @@
 + `{{ message | show }}`，如果show在methods中而不是filters中定义，会显示`Failed to resolve filter:`.
 + 过滤器可以用在两个地方：双花括号插值和v-bind表达式  “管道”符号
 
+## 了解响应式原理
++ [一篇关于$nextTick的文章](https://segmentfault.com/a/1190000012861862#comment-area)
 
-+ 想实现一个窗口可以自由拖动的简单编辑器;不断变化的时间；走钟；
+
+
++ 想实现一个窗口可以自由拖动的简单编辑器;走钟；
++ 实时显示时间 必须用定时器
 
 当通过计算属性改变数据过于复杂时可以用watch来监听数据。
 toggle是怎样切换的？每次通过this直接更改一次loginType的值？
