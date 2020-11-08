@@ -4,4 +4,10 @@
 ## el-form
 ## el-upload
 ## el-table
++ table 
+  + colgroup col
+  + thead
+    + tr  th
+  + tbody
+    + tr  td
 + 在` header-row-style`中设置background不起作用，需在 `header-cell-style`中设置

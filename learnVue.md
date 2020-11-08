@@ -14,7 +14,8 @@
 ### 计算属性和侦听器
 + data和computed下的变量,can both be acceesed by instance vm.
 + For computed and methods,`:function` can be ignored.
-+计算属性默认只有 getter,用来return 
++ 计算属性默认只有getter,用来return 
++ 计算属性可以用getter返回一个对象，然后在其他地方去修改这个对象的属性
 
 #### watch
 + { [key: string]: string | Function | Object | Array }
