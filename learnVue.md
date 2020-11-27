@@ -1,3 +1,5 @@
+[新手向：Vue 2.0 的建议学习顺序](https://zhuanlan.zhihu.com/p/23134551)
+
 # Vue教程
 
 ## 基础
@@ -40,7 +42,7 @@
 ### 列表渲染
 ### 事件处理
 + 用在普通元素上时，只能监听原生DOM事件。
-+ vm.$listeners 
++ vm.$listeners
   + 包含了父组件中的(不含.native修饰器的)v-on事件监听器
 
 ### 表单输入绑定
@@ -50,10 +52,14 @@
 + 对象作为props,可以进行类型检测。
 + Component template should contain exactly one root element.
 + 父子组件:组件A在它的模板中使用了组件B。
+#### 定义组件模板的方法： 
+字符串，ES6模板字面量，script/x-template, JavaScript内联模板, render函数，JSX, .vue组件
+
 
 
 ## 深入了解组件
 ### 组件注册
+
 ### Prop
 + camelCase的prop名在DOM模板中需要写成kebab-case
 
@@ -98,8 +104,6 @@ data properties：实例接受参数，当参数指向的数据发生变化时�
 
 
 
-#### 定义组件模板的方法： 
-字符串，ES6模板字面量，script/x-template, JavaScript内联模板, render函数，JSX, .vue组件
 
 
 ## Vue Router
