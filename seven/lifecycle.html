@@ -16,8 +16,11 @@
 <body>
 	<div id="counter">
 		<p>data必须是函数，避免不同组件共享同一个对象。</p>
+		<div>
+			<span>{{ resMsg }}</span>
+		</div>
 		<input v-model="words" placeholder="what do you want?">
-	  	<complex-counter></complex-counter>
+	  <complex-counter></complex-counter>
 	</div>
 	<script type="text/x-template" id="progress">
 		<p>
@@ -30,8 +33,8 @@
 	<script type="text/x-template" id="father">
 		<div>
 			<simple-counter></simple-counter>
-	    	<simple-counter></simple-counter>
-	    	<simple-counter></simple-counter>
+	    <simple-counter></simple-counter>
+	    <simple-counter></simple-counter>
 		</div>
 		
 	</script>
@@ -53,10 +56,20 @@
 		new Vue({
 		  el: '#counter',
 		  data:{
-		  	words:''
+		  	words:'',
+				resMsg: '???'
 		  },
+			beforeCreate(){
+				console.log("beforeCreated")
+				console.log(this.resMsg)
+			},
 		  created:function(){
 		  	console.log("created")
+				console.log(this.resMsg)
+				setTimeout(() => {
+					this.resMsg = "mounted"
+				}, 500);
+				this.resMsg = "lifeCycle"
 		  },
 		  mounted:function(){
 		  	console.log("mounted")
