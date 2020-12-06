@@ -3,8 +3,10 @@
 
 ## el-form
 ## el-upload
++ 自带的进度条无法获取到http请求的进度
+
 ## el-table
-+ table 
++ table
   + colgroup col
   + thead
     + tr  th

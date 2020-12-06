@@ -3,7 +3,10 @@
 # Vue教程
 
 ## 基础
-
+### Vue实例
++ 生命周期
+  + 请求异步数据为什么不放在mounted，而需要放在created或者beforeMount
+    + 比如有个loading
 ### 模板语法
 + 插值
   + 数据绑定   “Mustache”语法   v-once    v-html
