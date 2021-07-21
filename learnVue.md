@@ -38,9 +38,9 @@
 + > `在<template>上使用v-if`
   + 如果想切换多个元素，可以在template元素上使用v-if，对切换元素进行包裹。最终的渲染结果将不包含`<template>`元素。
 + 用属性key来避免元素被复用，确保独立性
-+ `v-show`只是简单的切换元素的css属性display，该元素始终会被渲染并保留在DOM中
++ `v-show`只是简单的切换元素的css属性display，该元素始终会被渲染并保留在DOM中 
   + `v-if`可以让条件块内的事件监听器和子组件被销毁和重建，因而有更高的切换开销
-  + 如果需要非常频繁地切换，则使用v-show较好
+  + 如果需要非常频繁地切换，则使用v-show较好，比如Dialog组件
 
 ### 列表渲染
 ### 事件处理
@@ -64,7 +64,10 @@
 ### 组件注册
 
 ### Prop
++ Prop是你可以在组件上注册的一些自定义attribute。当一个值传递给一个prop attribute的时候，它就变成了那个组件实例的一个property。
 + camelCase的prop名在DOM模板中需要写成kebab-case
+  + ??? 写成camelCase好像也行？？？
++ 如果想要将一个对象的所有property都作为prop传入，你可以使用不带参数的v-bind
 
 ### 自定义事件
 ### 插槽

@@ -8,3 +8,18 @@ if (!api.hasPlugin('eslint')) {
     })
   }
 ```
+```json
+  "eslintConfig": {
+      "env": {
+          "browser": true,
+          "node": true
+      },
+      "rules": {
+          "eqeqeq": "off",
+          "curly": "error",
+          "no-console": 2,
+          "quotes": ["error", "double"],
+          "plugin1/rule1": "error"
+      }
+  },
+```
